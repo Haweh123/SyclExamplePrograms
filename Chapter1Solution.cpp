@@ -17,7 +17,7 @@
 #include <CL/sycl.hpp>
 #endif
 
-// Task: Include SYCL header file
+
 
 
 // The below tests that the header file has been included
