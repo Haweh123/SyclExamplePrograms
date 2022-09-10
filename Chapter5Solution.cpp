@@ -70,6 +70,7 @@ class my_device_selector : public sycl::device_selector {
    }
  };
 
+// Did not rename test case due to not use if it breaks build
 TEST_CASE("intel_gpu_device_selector", "device_selectors_solution") {
   int a = 18, b = 24, r = 0;
 
@@ -81,7 +82,7 @@ TEST_CASE("intel_gpu_device_selector", "device_selectors_solution") {
     };
 
 
-    // Task: add a device selector to create this queue with an Intel GPU
+    
     auto defaultQueue = sycl::queue{my_device_selector{},asyncHandler};
 
     {
